@@ -1,0 +1,24 @@
+{
+  "name": "koa-meta-status",
+  "version": "1.0.0",
+  "description": "Adds a status field to a KOA meta response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "KOA",
+    "status",
+    "meta"
+  ],
+  "author": "Daniel Kennedy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danwkennedy/koa-meta-status"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
