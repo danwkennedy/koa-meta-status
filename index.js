@@ -15,7 +15,7 @@ module.exports = function *metaStatus(next) {
   }
 
   if (inStatusRange(this.status, 500)) {
-    this.state.meta.statue = 'failure';
+    this.state.meta.status = 'failure';
   }
 };
 
