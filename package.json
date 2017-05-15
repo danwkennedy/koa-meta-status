@@ -1,6 +1,6 @@
 {
   "name": "koa-meta-status",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Adds a status field to a KOA meta response",
   "main": "index.js",
   "scripts": {
