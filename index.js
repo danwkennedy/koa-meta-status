@@ -1,21 +1,18 @@
-'use strict';
+module.exports = async function metaStatus(ctx, next) {
+  await next();
 
+  ctx.state.meta = ctx.state.meta || {};
 
-module.exports = function *metaStatus(next) {
-  yield next;
-
-  this.state.meta = this.state.meta || {};
-
-  if (inStatusRange(this.status, 200)) {
-    this.state.meta.status = 'success';
+  if (inStatusRange(ctx.status, 200)) {
+    ctx.state.meta.status = 'success';
   }
 
-  if (inStatusRange(this.status, 400)) {
-    this.state.meta.status = 'error';
+  if (inStatusRange(ctx.status, 400)) {
+    ctx.state.meta.status = 'error';
   }
 
-  if (inStatusRange(this.status, 500)) {
-    this.state.meta.status = 'failure';
+  if (inStatusRange(ctx.status, 500)) {
+    ctx.state.meta.status = 'failure';
   }
 };
 
